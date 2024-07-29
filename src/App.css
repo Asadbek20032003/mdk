@@ -1768,9 +1768,9 @@ ol {
     padding-top: 30px;
   }
 
-  video {
+  /* video {
     max-width: 985px;
-  }
+  } */
 }
 
 /* Large Mobile: 480px */
@@ -1900,6 +1900,9 @@ ol {
     font-size: 40px;
     line-height: normal;
   }
+  .about__vid {
+    max-width: 414px;
+  }
 }
 
 /* Small Mobile: 320px */
@@ -1952,7 +1955,10 @@ ol {
     font-size: 22px;
   }
   video {
-    max-width: 375px;
+    max-width: 479px;
+  }
+  .about__vid {
+    max-width: 414px;
   }
 }
 
@@ -1974,5 +1980,21 @@ ol {
   }
   video {
     max-width: 430px;
+  }
+}
+
+@media (max-width: 280px) {
+  .about__vid {
+    max-width: 200px;
+  }
+  .about-us-section .section-title h2 {
+    font-size: 24px;
+  }
+  .portfolio-section .section-title h2 {
+    font-size: 24px;
+  }
+  .services-section .section-title h2 {
+    font-size: 24px;
+    font-weight: 600;
   }
 }
