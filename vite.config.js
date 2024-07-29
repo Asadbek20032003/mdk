@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["@fortawesome/fontawesome-free/css/all.min.css"],
+      external: ["@fortawesome/fontawesome-svg-core"],
     },
   },
 });
