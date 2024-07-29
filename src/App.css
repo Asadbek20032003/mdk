@@ -1709,6 +1709,9 @@ ol {
   left: 25em;
 }
 
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #fff;
+}
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1600px) {
@@ -1793,6 +1796,30 @@ ol {
     display: inline-block;
     float: none;
   }
+
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 3px #000;
+  }
+  .slicknav_menu .slicknav_icon {
+    float: left;
+    width: 1.125em;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em;
+  }
+
+  slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  }
+
   .slicknav_nav {
     background: #666;
     display: block;
@@ -1810,14 +1837,25 @@ ol {
     padding: 8px 30px;
     margin: 0;
   }
+
   .slicknav_nav ul {
     margin: 0;
+  }
+  .slicknav_nav a {
+    color: #fff;
+    text-decoration: none;
   }
   .slicknav_nav a:hover {
     border-radius: 0;
     background: #e32879;
     color: #ffffff;
   }
+  .slicknav_nav ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 8px;
+  }
+
   .slicknav_nav .slicknav_row:hover {
     border-radius: 0;
     background: #e32879;

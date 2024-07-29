@@ -32,16 +32,16 @@ const MemberAb = () => {
                   </div>
                   <div className="mt-social">
                     <Link to="#">
-                      <i className="fa fa-facebook"></i>
+                      <i className="fa fa-facebook" aria-hidden="true"></i>
                     </Link>
                     <Link to="#">
-                      <i className="fa fa-twitter"></i>
+                      <i className="fa fa-twitter" aria-hidden="true"></i>
                     </Link>
                     <Link to="#">
-                      <i className="fa fa-instagram"></i>
+                      <i className="fa fa-instagram" aria-hidden="true"></i>
                     </Link>
                     <Link to="#">
-                      <i className="fa fa-pinterest"></i>
+                      <i className="fa fa-pinterest" aria-hidden="true"></i>
                     </Link>
                   </div>
                 </div>

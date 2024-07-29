@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+
+import { useState } from "react";
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="header-section">
       <div className="container">
@@ -15,7 +22,7 @@ const Header = () => {
           <div className="col-lg-10 col-md-10">
             <div className="main-menu mobile-menu">
               <ul>
-                <li className="active">
+                <li>
                   <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")}>
                     Home
                   </NavLink>
@@ -61,63 +68,82 @@ const Header = () => {
         </nav>
         <div id="mobile-menu-wrap">
           <div className="slicknav_menu">
-            <Link to="#" aria-haspopup="true" role="button" className="slicknav_btn slicknav_collapsed">
+            <Link
+              to="#"
+              aria-haspopup="true"
+              role="button"
+              tabindex="0"
+              className="slicknav_btn slicknav_open"
+              style={{ outline: "none", display: "flex", flexDirection: "row", alignItems: "center", padding: "5px" }}
+              onClick={toggleMenu}
+            >
               <span className="slicknav_menutxt">MENU</span>
-              <span className="slicknav_icon">
-                <span className="slicknav_icon-bar"></span>
-                <span className="slicknav_icon-bar"></span>
-                <span className="slicknav_icon-bar"></span>
-              </span>
+              <i
+                className="fas fa-bars"
+                style={{
+                  color: "white",
+                  marginLeft: "5px",
+                  paddingRight: "5px",
+                }}
+              ></i>
             </Link>
-            <div className="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu">
-              <ul>
-                <li className="active">
-                  <Link to="/" role="menuitem">
+            <div
+              className="slicknav_nav"
+              style={{
+                display: isOpen ? "block" : "none",
+                width: "100%",
+              }}
+              aria-hidden={!isOpen}
+              role="menu"
+            >
+              <ul style={{ width: "100%" }}>
+                <li style={{ width: "100%" }}>
+                  <NavLink to="/" exact className={({ isActive }) => (isActive ? "active" : "")}>
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/faq" role="menuitem">
-                    About
-                  </Link>
+                  <NavLink to="/faq" className={({ isActive }) => (isActive ? "active" : "")}>
+                    About Us
+                  </NavLink>
                 </li>
                 <li>
-                  <Link to="/blog" role="menuitem">
+                  <NavLink to="/blog" className={({ isActive }) => (isActive ? "active" : "")}>
                     Blog
-                  </Link>
+                  </NavLink>
                 </li>
                 <li className="slicknav_collapsed slicknav_parent">
-                  <Link to="#" role="menuitem" aria-haspopup="true" className="slicknav_item slicknav_row">
-                    <Link to="/gallery">Gallery</Link>
+                  <NavLink to="/gallery" className="slicknav_item slicknav_row">
+                    Gallery
                     <span className="slicknav_arrow">►</span>
-                  </Link>
-                  <ul className="dropdown slicknav_hidden" role="menu" aria-hidden="true">
+                  </NavLink>
+                  <ul className="dropdown slicknav_hidden" role="menu" aria-hidden="true" style={{ display: "none" }}>
                     <li>
-                      <Link to="#" role="menuitem">
+                      <Link to="#" role="menuitem" tabindex="-1">
                         Naoh
                       </Link>
                     </li>
                     <li>
-                      <Link to="#" role="menuitem">
+                      <Link to="#" role="menuitem" tabindex="-1">
                         Padis
                       </Link>
                     </li>
                     <li>
-                      <Link to="#" role="menuitem">
+                      <Link to="#" role="menuitem" tabindex="-1">
                         Jacob
                       </Link>
                     </li>
                     <li>
-                      <Link to="#" role="menuitem">
+                      <Link to="#" role="menuitem" tabindex="-1">
                         Gomez
                       </Link>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <Link to="/contact" role="menuitem">
+                  <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")}>
                     Contact
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </div>
