@@ -134,7 +134,7 @@ const Testimonial = () => {
                         <span>Designer</span>
                       </div>
                       <p>
-                        Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
+                        Adipisci velit, sed quia sp numquam eius modi tempora incidunt ut labore et dolore magnam
                         aliquam quaerat voluptatem.
                       </p>
                     </div>

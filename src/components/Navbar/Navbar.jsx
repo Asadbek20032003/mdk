@@ -119,7 +119,7 @@ const Header = () => {
                   </NavLink>
                   <ul className="dropdown slicknav_hidden" role="menu" aria-hidden="true" style={{ display: "none" }}>
                     <li>
-                      <Link to="#" role="menuitem" tabindex="-1">
+                      <Link to="/" role="menuitem" tabindex="-1">
                         Naoh
                       </Link>
                     </li>
