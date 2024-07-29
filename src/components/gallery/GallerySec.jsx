@@ -19,9 +19,7 @@ const GallerySec = () => {
           <div className="col-lg-12">
             <div className="gallery-controls">
               <ul>
-                <li className="active" data-filter=".all">
-                  All gallery
-                </li>
+                <li data-filter=".all">All gallery</li>
                 <li data-filter=".fashion">Fashion</li>
                 <li data-filter=".model">Model</li>
                 <li data-filter=".event">Event</li>
@@ -30,19 +28,38 @@ const GallerySec = () => {
             </div>
           </div>
           <div className="row gallery-filter" id="MixItUpF8AC71">
-            <div className="col-lg-6 mix all fashion">
-              <div className="gs-item">
-                <video
-                  width="100%"
-                  height="auto"
-                  src="https://mdk.pw/img/port/Comp 113.mp4"
-                  autoPlay
-                  muted
-                  loop
-                  id="bgVideo"
-                >
-                  <source src="https://mdk.pw/img/port/Comp 113.mp4" type="video/mp4" />
-                </video>
+            <div className="col-lg-6">
+              <div className="row">
+                <div className="col-lg-6 mix all event">
+                  <div className="gs-item">
+                    <video
+                      width="100%"
+                      height="auto"
+                      src="https://mdk.pw/img/port/ae.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      id="bgVideo"
+                    >
+                      <source src="https://mdk.pw/img/port/ae.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+                <div className="col-lg-6 mix all model other">
+                  <div className="gs-item">
+                    <video
+                      width="100%"
+                      height="auto"
+                      src="https://mdk.pw/img/port/Comp 12222_2.mp4"
+                      autoPlay
+                      muted
+                      loop
+                      id="bgVideo"
+                    >
+                      <source src="https://mdk.pw/img/port/Comp 12222_2.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
@@ -109,68 +126,19 @@ const GallerySec = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="row">
-                <div className="col-lg-6 mix all event">
-                  <div className="gs-item">
-                    <video
-                      width="100%"
-                      height="auto"
-                      src="https://mdk.pw/img/port/ae.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      id="bgVideo"
-                    >
-                      <source src="https://mdk.pw/img/port/ae.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-                <div className="col-lg-6 mix all model other">
-                  <div className="gs-item">
-                    <video
-                      width="100%"
-                      height="auto"
-                      src="https://mdk.pw/img/port/Comp 12222_2.mp4"
-                      autoPlay
-                      muted
-                      loop
-                      id="bgVideo"
-                    >
-                      <source src="https://mdk.pw/img/port/Comp 12222_2.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 mix all fashion event">
+            <div className="col-lg-6 mix all fashion" style={{ display: "flex", flexWrap: "wrap" }}>
               <div className="gs-item">
                 <video
                   width="100%"
                   height="auto"
-                  src="https://mdk.pw/img/port/qwinsnew.mp4"
+                  src="https://mdk.pw/img/port/Comp 113.mp4"
                   autoPlay
                   muted
                   loop
                   id="bgVideo"
                 >
-                  <source src="https://mdk.pw/img/port/qwinsnew.mp4" type="video/mp4" />
+                  <source src="https://mdk.pw/img/port/Comp 113.mp4" type="video/mp4" />
                 </video>
-              </div>
-              <div className="col-lg-6 mix all fashion event">
-                <div className="gs-item">
-                  <video
-                    width="100%"
-                    height="auto"
-                    src="https://mdk.pw/img/port/alkatras.mp4"
-                    autoPlay
-                    muted
-                    loop
-                    id="bgVideo"
-                  >
-                    <source src="https://mdk.pw/img/port/alkatras.mp4" type="video/mp4" />
-                  </video>
-                </div>
               </div>
               <div className="col-lg-6 mix all fashion event">
                 <div className="gs-item">
@@ -199,6 +167,36 @@ const GallerySec = () => {
                     id="bgVideo"
                   >
                     <source src="https://mdk.pw/img/port/Comp 1.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 mix all fashion event" style={{ display: "flex", flexWrap: "wrap" }}>
+              <div className="gs-item">
+                <video
+                  width="100%"
+                  height="auto"
+                  src="https://mdk.pw/img/port/qwinsnew.mp4"
+                  autoPlay
+                  muted
+                  loop
+                  id="bgVideo"
+                >
+                  <source src="https://mdk.pw/img/port/qwinsnew.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="col-lg-6 mix all fashion event">
+                <div className="gs-item">
+                  <video
+                    width="100%"
+                    height="auto"
+                    src="https://mdk.pw/img/port/alkatras.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    id="bgVideo"
+                  >
+                    <source src="https://mdk.pw/img/port/alkatras.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>

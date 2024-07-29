@@ -1543,7 +1543,7 @@ ol {
   cursor: pointer;
 }
 
-.gallery-section .gallery-controls ul li.active {
+.gallery-section .gallery-controls ul li:hover {
   color: #e32879;
 }
 
