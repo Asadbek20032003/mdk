@@ -8,6 +8,7 @@ const AboutUsSection = () => {
             <div className="as-pic">
               <video
                 src="https://mdk.pw/img/dva1.mp4"
+                className="about__vid"
                 autoPlay
                 muted
                 loop

@@ -1706,7 +1706,6 @@ ol {
   display: flex;
   background-color: #8383838c;
   border-radius: 15px;
-  left: 25em;
 }
 
 .slicknav_menu .slicknav_icon-bar {
@@ -1771,11 +1770,6 @@ ol {
 
   video {
     max-width: 985px;
-  }
-
-  .textosnova {
-    right: 900px;
-    top: -12em;
   }
 }
 
@@ -1960,11 +1954,6 @@ ol {
   video {
     max-width: 375px;
   }
-  .textosnova {
-    right: 350px;
-    top: 10px;
-    background-color: #191919;
-  }
 }
 
 @media (max-width: 414px) {
@@ -1977,6 +1966,9 @@ ol {
 }
 
 @media (max-width: 430px) {
+  .about__vid {
+    max-width: 375px;
+  }
   .video {
     max-width: 430px;
   }

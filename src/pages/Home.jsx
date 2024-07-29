@@ -10,7 +10,7 @@ import Blog from "../components/home/blog/Blog";
 const Home = () => {
   return (
     <>
-      <section className="hero-section set-bg" style={{ backgroundImage: "undefined" }}>
+      <section className="hero-section set-bg" style={{ display: "flex", justifyContent: "center" }}>
         <Textosnova />
         <VideoBack />
       </section>
