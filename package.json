@@ -15,6 +15,7 @@
     "mixitup": "^3.3.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-owl-carousel": "^2.3.3",
     "react-router": "^6.25.1",
     "react-router-dom": "^6.25.1"
   },

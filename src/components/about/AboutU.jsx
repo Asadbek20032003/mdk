@@ -1,3 +1,15 @@
+import React from "react";
+import Counter from "./Counter"; // `Counter` komponentini to'g'ri import qiling
+
+const AboutCounter = () => (
+  <div className="about-counter">
+    <Counter start={0} end={8384} duration={2000} label="Member" />
+    <Counter start={0} end={6880} duration={2000} label="Partner" />
+    <Counter start={0} end={1546} duration={2000} label="Branch" />
+    <Counter start={0} end={4677} duration={2000} label="Designs" />
+  </div>
+);
+
 const AboutU = () => {
   return (
     <section className="about-us-section spad">
@@ -5,7 +17,7 @@ const AboutU = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="as-pic">
-              <img src="https://mdk.pw/img/about-us.jpg" alt="" />
+              <img src="https://mdk.pw/img/about-us.jpg" alt="About Us" />
             </div>
           </div>
           <div className="col-lg-6">
@@ -23,24 +35,7 @@ const AboutU = () => {
                 dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua.
               </p>
-              <div className="about-counter">
-                <div className="ac-item">
-                  <h2 className="ab-count">8384</h2>
-                  <p>Member</p>
-                </div>
-                <div className="ac-item">
-                  <h2 className="ab-count">6880</h2>
-                  <p>Partner</p>
-                </div>
-                <div className="ac-item">
-                  <h2 className="ab-count">1546</h2>
-                  <p>Branch</p>
-                </div>
-                <div className="ac-item">
-                  <h2 className="ab-count">4677</h2>
-                  <p>Designs</p>
-                </div>
-              </div>
+              <AboutCounter />
             </div>
           </div>
         </div>

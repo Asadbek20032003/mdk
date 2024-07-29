@@ -7,6 +7,7 @@ import Counter from "../components/home/counter/Counter";
 import Callto from "../components/home/calltos/Callto";
 import Member from "../components/home/members/Member";
 import Blog from "../components/home/blog/Blog";
+import Portfolio from "../components/home/portfolio/Portfolio";
 const Home = () => {
   return (
     <>
@@ -16,7 +17,9 @@ const Home = () => {
       </section>
       <AboutUs />
       <Services />
+      <Portfolio />
       <Counter />
+
       {/* <Testimonial /> */}
       <Callto />
       <Member />
