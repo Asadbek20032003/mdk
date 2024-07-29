@@ -1,6 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faMobile, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import { FaEnvelope, FaMapMarkerAlt, FaMobile } from "react-icons/fa";
 const ContactSec = () => {
   return (
     <section className="contact-section spad">
@@ -12,7 +10,7 @@ const ContactSec = () => {
               <div className="ct-item">
                 <div className="ci-icon">
                   <span className="ti-location-pin">
-                    <FontAwesomeIcon icon={faLocationDot} />
+                    <FaMapMarkerAlt />
                   </span>
                 </div>
                 <div className="ci-text">
@@ -27,7 +25,7 @@ const ContactSec = () => {
               <div className="ct-item">
                 <div className="ci-icon">
                   <span className="ti-mobile">
-                    <FontAwesomeIcon icon={faMobile} />
+                    <FaMobile />
                   </span>
                 </div>
                 <div className="ci-text">
@@ -42,7 +40,7 @@ const ContactSec = () => {
               <div className="ct-item">
                 <div className="ci-icon">
                   <span className="ti-email">
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FaEnvelope />
                   </span>
                 </div>
                 <div className="ci-text">

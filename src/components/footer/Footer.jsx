@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faTwitter, faPinterest } from "@fortawesome/free-brands-svg-icons";
+
+import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <section className="footer-section">
@@ -20,16 +21,16 @@ const Footer = () => {
               </ul>
               <div className="fo-social">
                 <Link to="#">
-                  <FontAwesomeIcon icon={faFacebook} />
+                  <FaInstagram />
                 </Link>
                 <Link to="#">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FaFacebook />
                 </Link>
                 <Link to="#">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FaTwitter />
                 </Link>
                 <Link to="#">
-                  <FontAwesomeIcon icon={faPinterest} />
+                  <FaPinterest />
                 </Link>
               </div>
             </div>

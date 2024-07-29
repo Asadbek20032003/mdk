@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faTwitter, faPinterest } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faFacebook, faInstagram, faTwitter, faPinterest } from "@fortawesome/free-brands-svg-icons";
+import { FaFacebook, FaTwitter, FaInstagram, FaPinterest } from "react-icons/fa";
 const MemberAb = () => {
   return (
     <section className="member-section spad ap-member">
@@ -33,16 +34,16 @@ const MemberAb = () => {
                   </div>
                   <div className="mt-social">
                     <Link to="#">
-                      <FontAwesomeIcon icon={faInstagram} />
+                      <FaFacebook />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faTwitter} />
+                      <FaTwitter />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faFacebook} />
+                      <FaInstagram />
                     </Link>
                     <Link to="#">
-                      <FontAwesomeIcon icon={faPinterest} />
+                      <FaPinterest />
                     </Link>
                   </div>
                 </div>
