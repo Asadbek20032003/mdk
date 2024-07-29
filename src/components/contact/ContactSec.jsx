@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faMobile, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const ContactSec = () => {
   return (
     <section className="contact-section spad">
