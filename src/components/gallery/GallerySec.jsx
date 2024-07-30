@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import mixitup from "mixitup";
-
+import { GalleryData } from "./galleryData";
 const GallerySec = () => {
   useEffect(() => {
     const mixer = mixitup(".gallery-filter");
@@ -12,6 +12,19 @@ const GallerySec = () => {
     });
   }, []);
 
+  const [data, setData] = useState([]);
+  const [collection, setCollection] = useState([]);
+
+  useEffect(() => {
+    setData(GalleryData);
+    setCollection([...new Set(GalleryData.map((item) => item.titile))]);
+  }, []);
+
+  const gallery_filter = (itemData) => {
+    const filterData = GalleryData.filter((item) => item.titile == itemData);
+    setData(filterData);
+  };
+
   return (
     <section className="gallery-section spad">
       <div className="container">
@@ -19,16 +32,34 @@ const GallerySec = () => {
           <div className="col-lg-12">
             <div className="gallery-controls">
               <ul>
-                <li data-filter=".all">All gallery</li>
-                <li data-filter=".fashion">Fashion</li>
-                <li data-filter=".model">Model</li>
-                <li data-filter=".event">Event</li>
-                <li data-filter=".other">Other</li>
+                <li onClick={() => setData(GalleryData)}>All Galery</li>
+                {collection.map((item) => (
+                  <li
+                    key={item}
+                    onClick={() => {
+                      gallery_filter(item);
+                    }}
+                  >
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
           <div className="row gallery-filter" id="MixItUpF8AC71">
-            <div className="col-lg-6">
+            <div className="">
+              <div className="  mix" style={{ display: "grid", gridTemplateColumns: "1fr  1fr 1fr 1fr", gap: "5px" }}>
+                {data.map((item) => (
+                  <div key={item.id} className="gs-item">
+                    <video width="100%" height="auto" src={item.src} autoPlay muted loop id="bgVideo">
+                      <source src={item.src} type="video/mp4" />
+                    </video>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* <div className="col-lg-6">
               <div className="row">
                 <div className="col-lg-6 mix all event">
                   <div className="gs-item">
@@ -200,7 +231,7 @@ const GallerySec = () => {
                   </video>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
