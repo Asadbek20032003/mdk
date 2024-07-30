@@ -1572,6 +1572,12 @@ ol {
   transform: scale(1.1);
 }
 
+.video__map {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
 .modal-container {
   display: flex;
   align-items: center;
@@ -1742,10 +1748,6 @@ ol {
   .as-text .about-counter .ac-item:after {
     right: -7px;
   }
-  .video,
-  video {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -1903,6 +1905,12 @@ ol {
   .about__vid {
     max-width: 414px;
   }
+
+  .video__map {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
 }
 
 /* Small Mobile: 320px */
@@ -1959,6 +1967,12 @@ ol {
   }
   .about__vid {
     max-width: 414px !important;
+  }
+
+  .video__map {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
   }
 }
 

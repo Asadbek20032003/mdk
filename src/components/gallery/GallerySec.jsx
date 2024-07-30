@@ -48,7 +48,7 @@ const GallerySec = () => {
           </div>
           <div className="row gallery-filter" id="MixItUpF8AC71">
             <div className="">
-              <div className="  mix" style={{ display: "grid", gridTemplateColumns: "1fr  1fr 1fr 1fr", gap: "5px" }}>
+              <div className="video__map ">
                 {data.map((item) => (
                   <div key={item.id} className="gs-item">
                     <video width="100%" height="auto" src={item.src} autoPlay muted loop id="bgVideo">
